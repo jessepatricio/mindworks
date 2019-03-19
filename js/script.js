@@ -236,12 +236,12 @@ $(function () {
 
             // Show white nav
             $("nav").addClass("white-nav-top");
-            
+
             // Show dark logo text
-            $("company-logo").addClass("company-black-logo");
+            $("#company-logo").addClass("company-black-logo");
 
             // Show dark logo
-            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            //$(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
 
             // Show back to top button
             $("#back-to-top").fadeIn();
@@ -250,12 +250,12 @@ $(function () {
 
             // Hide white nav
             $("nav").removeClass("white-nav-top");
-            
+
             // Hide black logo
-            $("company-logo").removeClass("company-black-logo");
+            $("#company-logo").removeClass("company-black-logo");
 
             // Show logo
-            $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            //$(".navbar-brand img").attr("src", "img/logo/logo.png");
 
             // Hide back to top button
             $("#back-to-top").fadeOut();
