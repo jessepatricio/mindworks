@@ -25,7 +25,7 @@ steps:
   - task: CopyFiles@1
     displayName: "Publish artifacts"
     inputs: 
-      SourceFolder: '$Build.SourceDirectory/deployment'
+      SourceFolder: '$Build.SourceDirectory'
       contents: '**\*'
-      targetFolder: $(Build.ArtifactsStagingDirectory)/deployment
+      targetFolder: $(Build.ArtifactsStagingDirectory)
       CleanTargetFolder: true
