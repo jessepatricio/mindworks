@@ -22,5 +22,10 @@ steps:
       php -version
     displayName: "Use PHP version $(phpVersion)"
 
-  - task: PublishArtifacts@1
+  - task: CopyFiles@1
     displayName: "Publish artifacts"
+    inputs: 
+      SourceFolder: '$Build.SourceDirectory/deployment'
+      contents: '**\*'
+      targetFolder: $(Build.ArtifactsStagingDirectory)/deployment
+      CleanTargetFolder: true
